@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="114594" started-at="2017-01-21T13:16:49Z" finished-at="2017-01-21T13:18:44Z">
+    <groups>
+      <group name="smoke">
+        <method signature="Test_Scenario.test_Scenario(java.util.Map)[pri:0, instance:ScenarioComponent.Test_Scenario@64729b1e]" name="test_Scenario" class="ScenarioComponent.Test_Scenario"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test name="Default test" duration-ms="114594" started-at="2017-01-21T13:16:49Z" finished-at="2017-01-21T13:18:44Z">
+      <class name="ScenarioComponent.Test_Scenario">
+        <test-method status="PASS" signature="test_Scenario(java.util.Map)[pri:0, instance:ScenarioComponent.Test_Scenario@64729b1e]" name="test_Scenario" duration-ms="57523" started-at="2017-01-21T18:46:50Z" data-provider="dp_validsearch" finished-at="2017-01-21T18:47:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Order=1.0, Execute_Flag=Y, TC_ID=GB_01, Script_name=InvalidSearch, Search_item=####$, Exp_Result=Sorry! }]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Scenario -->
+        <test-method status="PASS" signature="test_Scenario(java.util.Map)[pri:0, instance:ScenarioComponent.Test_Scenario@64729b1e]" name="test_Scenario" duration-ms="56761" started-at="2017-01-21T18:47:47Z" data-provider="dp_validsearch" finished-at="2017-01-21T18:48:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Order=2.0, Execute_Flag=Y, TC_ID=GB_01, Script_name=InvalidSearch, Search_item=#****, Exp_Result=Sorry! }]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Scenario -->
+      </class> <!-- ScenarioComponent.Test_Scenario -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Decbatch">
+
+
+    <test name="RegSet1">
+      
+       <groups>
+      <run>
+
+     <include name="smoke"/>
+     <exclude name="regression"/>
+     
+      </run>
+      </groups>  
+    
+     <classes>
+            
+            <class  name="ScenarioComponent.Test_Scenario" />
+            
+       </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
