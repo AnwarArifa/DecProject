@@ -17,7 +17,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.remote.MobileCapabilityType;
 
 public class BaseClass {
 	
@@ -42,13 +41,21 @@ public class BaseClass {
 		
 		DesiredCapabilities capbilities = new DesiredCapabilities();
 		
-		capbilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Moto G Play");
-		capbilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "android");
-		capbilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "6.0.1");
+		capbilities.setCapability("deviceName", "Moto G Play");
+		capbilities.setCapability("platformName", "android");
+		capbilities.setCapability("platformVersion", "6.0.1");
 		
-		capbilities.setCapability(MobileCapabilityType.APP_PACKAGE, "com.bigbasket.mobileapp");
-		capbilities.setCapability(MobileCapabilityType.APP_ACTIVITY, "com.bigbasket.mobileapp.activity.SplashActivity");
+		capbilities.setCapability("appPackage", "com.bigbasket.mobileapp");
+		capbilities.setCapability("appActivity", "com.bigbasket.mobileapp.activity.SplashActivity");
 		
+		
+//		capbilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Moto G Play");
+//		capbilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "android");
+//		capbilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "6.0.1");
+		
+//		capbilities.setCapability(MobileCapabilityType.APP_PACKAGE, "com.bigbasket.mobileapp");
+//		capbilities.setCapability(MobileCapabilityType.APP_ACTIVITY, "com.bigbasket.mobileapp.activity.SplashActivity");
+//		
 		driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"),capbilities);
 		
 		Thread.sleep(10000);

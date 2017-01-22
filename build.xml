@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="HybridFW" default="main" basedir=".">
+<project name="FrameWork_Proj" default="main" basedir=".">
 
 	<!-- Variables used for test source directory -->
 	<property name="test.src" location="${basedir}/src/test/java" />

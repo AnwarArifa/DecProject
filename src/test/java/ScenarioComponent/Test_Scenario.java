@@ -27,7 +27,9 @@ public class Test_Scenario extends BaseClass {
 		Start_Sever();
 		log.info("execution started"+TC_ID+"order"+Order);
 		Thread.sleep(8000);
+		System.out.println("app started");
 		initapp();
+		System.out.println("app ended");
 		OR_Search or1 = new OR_Search(driver);
 		Explicit_Wait(or1.search_btn,25);
 		or1.click_search_btn();
