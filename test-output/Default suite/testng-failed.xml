@@ -5,7 +5,7 @@
     <classes>
       <class name="ScenarioComponent.Test_Scenario">
         <methods>
-          <include name="test_Scenario" invocation-numbers="0 1"/>
+          <include name="test_Scenario"/>
         </methods>
       </class> <!-- ScenarioComponent.Test_Scenario -->
     </classes>

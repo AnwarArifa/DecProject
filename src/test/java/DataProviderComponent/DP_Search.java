@@ -35,7 +35,7 @@ public class DP_Search {
 	public static List<Object[]> getXlData(String scriptname) throws IOException {
 		
 		ExcelReadeWrite xl = new ExcelReadeWrite("D:\\TestData.xls");
-		HSSFSheet Sheet1 = xl.setSheet("Sheet1");
+		HSSFSheet Sheet1 = xl.setSheet("Scenario_Search");
 		int rowCount = xl.getRowCount(Sheet1);
 		int colCount = xl.getColCount(Sheet1, 0);
 		
